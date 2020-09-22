@@ -7,9 +7,18 @@
     android:orientation="vertical"
     android:id="@+id/fragment1">
 
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/demo"
+        android:textSize="@dimen/intro_size"
+        />
+
     <ListView
         android:id="@+id/types"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/top_distance"/>
 
 </FrameLayout>
