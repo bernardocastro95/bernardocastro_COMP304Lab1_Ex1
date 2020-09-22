@@ -16,7 +16,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ActivitiesTypes at = new ActivitiesTypes();
+        ActivityCycle ac = new ActivityCycle();
         getSupportFragmentManager().beginTransaction().add(R.id.fragment1, at).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.fragment2, ac).commit();
 
     }
 }

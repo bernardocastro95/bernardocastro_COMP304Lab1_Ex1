@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="intro_size">25dp</dimen>
+    <dimen name="activity_type_size">30dp</dimen>
     <dimen name="top_distance">35dp</dimen>
+    <dimen name="fragment1_height">300dp</dimen>
+    <dimen name="fragment2_height">435dp</dimen>
 </resources>
