@@ -27,8 +27,8 @@ public class ActivitiesTypes extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_activities_types, container, false);
-        ListView lv = view.findViewById(R.id.types);
+        final View view = inflater.inflate(R.layout.fragment_activities_types, container, false);
+        final ListView lv = view.findViewById(R.id.types);
         final ArrayAdapter adapter = new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1, types);
         lv.setAdapter(adapter);
         
@@ -36,7 +36,13 @@ public class ActivitiesTypes extends Fragment {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Toast.makeText(getActivity(), "Testing", Toast.LENGTH_SHORT).show();
+                if(lv.getItemAtPosition(position).toString().trim().equals("AIActivity")){
+                    Toast.makeText(getActivity(), "Executing activities", Toast.LENGTH_SHORT).show();
+                }
+                else if(lv.getItemAtPosition(position).toString().trim().equals("VRActivity")){
+                    Toast.makeText(getActivity(), "Executing activities", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
         

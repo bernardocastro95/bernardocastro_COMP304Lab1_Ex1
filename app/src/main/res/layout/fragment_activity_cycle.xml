@@ -10,7 +10,20 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/main_activity"
+        android:text="@string/activity_type"
         android:textSize="@dimen/activity_type_size"/>
+
+    <TextView
+        android:id="@+id/onStart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/activity_type_size"
+        android:layout_marginTop="@dimen/text_start_distance"/>
+    <TextView
+        android:id="@+id/onCreate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/activity_type_size"
+        android:layout_marginTop="@dimen/text_create_distance"/>
 
 </FrameLayout>

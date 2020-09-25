@@ -3,6 +3,8 @@
     <dimen name="intro_size">25dp</dimen>
     <dimen name="activity_type_size">30dp</dimen>
     <dimen name="top_distance">35dp</dimen>
+    <dimen name="text_start_distance">45dp</dimen>
+    <dimen name="text_create_distance">75dp</dimen>
     <dimen name="fragment1_height">300dp</dimen>
     <dimen name="fragment2_height">435dp</dimen>
 </resources>
