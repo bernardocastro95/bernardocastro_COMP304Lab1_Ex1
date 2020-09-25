@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">bernardocastro_COMP304Lab1_Ex1</string>
     <string name="demo">Life Cycle Methods Demonstration</string>
-    <string name="activity_type">Main Activity:</string>
+    <string name="main_activity">Main Activity:</string>
     <string name="start">onStart executed</string>
     <string name="create">onCreate executed</string>
+    <string name="AI">AI Activity:</string>
+    <string name="VR">VR Activity:</string>
 
 </resources>

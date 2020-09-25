@@ -8,9 +8,10 @@
 
 
     <TextView
+        android:id="@+id/activity_type"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/activity_type"
+        android:text="@string/main_activity"
         android:textSize="@dimen/activity_type_size"/>
 
     <TextView
