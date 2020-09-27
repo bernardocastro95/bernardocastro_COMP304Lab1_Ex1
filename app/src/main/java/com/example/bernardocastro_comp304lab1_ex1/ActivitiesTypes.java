@@ -43,6 +43,8 @@ public class ActivitiesTypes extends Fragment {
                     Toast.makeText(getActivity(), "Executing activities", Toast.LENGTH_SHORT).show();
                 }
                 else if(lv.getItemAtPosition(position).toString().trim().equals("VRActivity")){
+                    ActivityCycle ac = (ActivityCycle) getFragmentManager().findFragmentById(R.id.fragment2);
+                    ac.show(types[position]);
                     Toast.makeText(getActivity(), "Executing activities", Toast.LENGTH_SHORT).show();
                 }
 
