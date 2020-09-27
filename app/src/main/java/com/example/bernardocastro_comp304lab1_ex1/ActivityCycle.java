@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class ActivityCycle extends Fragment {
 
-    TextView type, start, create;
+    TextView type, start, create, stop, destroy;
 
     public ActivityCycle() {
 
@@ -24,12 +24,20 @@ public class ActivityCycle extends Fragment {
         start = view.findViewById(R.id.onStart);
         create = view.findViewById(R.id.onCreate);
         type = view.findViewById(R.id.activity_type);
+        stop = view.findViewById(R.id.onStop);
+        destroy = view.findViewById(R.id.onDestroy);
         String StartTest = getResources().getString(R.string.start);
         start.setText(StartTest);
         start.setVisibility(View.GONE);
         String CreateText = getResources().getString(R.string.create);
         create.setText(CreateText);
         create.setVisibility(View.GONE);
+        String StopText = getResources().getString(R.string.stop);
+        stop.setText(StopText);
+        stop.setVisibility(View.GONE);
+        String DestroyText = getResources().getString(R.string.destroy);
+        destroy.setText(DestroyText);
+        destroy.setVisibility(View.GONE);
         return view;
     }
 
@@ -37,6 +45,8 @@ public class ActivityCycle extends Fragment {
         type.setText(activity);
         start.setVisibility(View.VISIBLE);
         create.setVisibility(View.VISIBLE);
+        stop.setVisibility(View.VISIBLE);
+        destroy.setVisibility(View.VISIBLE);
 
     }
 }

@@ -25,5 +25,17 @@
         android:layout_height="match_parent"
         android:textSize="@dimen/activity_type_size"
         android:layout_marginTop="@dimen/text_create_distance"/>
+    <TextView
+        android:id="@+id/onStop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/activity_type_size"
+        android:layout_marginTop="@dimen/text_stop_distance"/>
+    <TextView
+        android:id="@+id/onDestroy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/activity_type_size"
+        android:layout_marginTop="@dimen/text_destroy_distance"/>
 
 </FrameLayout>

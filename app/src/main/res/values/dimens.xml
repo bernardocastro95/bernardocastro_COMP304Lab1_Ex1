@@ -5,6 +5,8 @@
     <dimen name="top_distance">35dp</dimen>
     <dimen name="text_start_distance">45dp</dimen>
     <dimen name="text_create_distance">75dp</dimen>
+    <dimen name="text_stop_distance">105dp</dimen>
+    <dimen name="text_destroy_distance">135dp</dimen>
     <dimen name="fragment1_height">300dp</dimen>
     <dimen name="fragment2_height">435dp</dimen>
 </resources>

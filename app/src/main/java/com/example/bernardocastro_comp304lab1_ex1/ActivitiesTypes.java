@@ -20,7 +20,7 @@ import java.util.List;
 
 public class ActivitiesTypes extends Fragment {
 
-    String[] types = new String[]{"MainActivity", "AIActivity", "VRActivity"};
+    String[] types = new String[]{"AIActivity", "VRActivity"};
     public ActivitiesTypes() {
 
     }
@@ -37,12 +37,7 @@ public class ActivitiesTypes extends Fragment {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                if(lv.getItemAtPosition(position).toString().trim().equals("MainActivity")){
-                    ActivityCycle ac = (ActivityCycle) getFragmentManager().findFragmentById(R.id.fragment2);
-                    ac.show(types[position]);
-                    Toast.makeText(getActivity(), "Executing activities", Toast.LENGTH_SHORT).show();
-                }
-                else if(lv.getItemAtPosition(position).toString().trim().equals("AIActivity")){
+               if(lv.getItemAtPosition(position).toString().trim().equals("AIActivity")){
                     ActivityCycle ac = (ActivityCycle) getFragmentManager().findFragmentById(R.id.fragment2);
                     ac.show(types[position]);
                     Toast.makeText(getActivity(), "Executing activities", Toast.LENGTH_SHORT).show();

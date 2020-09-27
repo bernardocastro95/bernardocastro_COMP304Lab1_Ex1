@@ -4,6 +4,8 @@
     <string name="main_activity">Main Activity:</string>
     <string name="start">onStart executed</string>
     <string name="create">onCreate executed</string>
+    <string name="stop">onStop executed</string>
+    <string name="destroy">onDestroy executed</string>
     <string name="AI">AI Activity:</string>
     <string name="VR">VR Activity:</string>
 
